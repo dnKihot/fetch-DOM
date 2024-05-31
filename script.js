@@ -1,4 +1,5 @@
 
+
 async function fetchRepositories(query) {
   try {
     const response = await fetch(`https://api.github.com/search/repositories?q=${query}`);
@@ -70,4 +71,3 @@ function addRepositoryToList(repo) {
 
   repositoryList.insertBefore(listItem, repositoryList.firstChild) 
 }
-
